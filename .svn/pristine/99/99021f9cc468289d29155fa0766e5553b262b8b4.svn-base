@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PROCESS model-entity="StrutsProcess">
+ <PROCESS-ITEM NAME="page0"
+  PATH="/jsp/portal/caema/portal_caema_teleatendimento.jsp"
+  SHAPE="256,34,0,0" SUBTYPE="jsp"
+  TITLE="portal_caema_teleatendimento.jsp" TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM NAME="page1"
+  PATH="/jsp/portal/caema/ouvidoria_portal_caema.jsp"
+  SHAPE="256,178,0,0" SUBTYPE="jsp" TITLE="ouvidoria_portal_caema.jsp"
+  TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM ID="#exibirCanaisAtendimentoCaerAction" NAME="action0"
+  PATH="/exibirCanaisAtendimentoCaerAction" SHAPE="32,17,0,0"
+  TITLE="ExibirCanaisAtendimentoCaerActionForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="exibirTeleAtendimentoCaerAction"
+   NAME="forward0"
+   PATH="/jsp/portal/caer/portal_caer_teleatendimento.jsp"
+   TARGET="page2" TITLE="exibirTeleAtendimentoCaerAction" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="exibirOuvidoriaCaerAction" NAME="forward1"
+   PATH="/jsp/portal/caer/ouvidoria_portal_caer.jsp" TARGET="page4"
+   TITLE="exibirOuvidoriaCaerAction" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="page2"
+  PATH="/jsp/portal/caer/portal_caer_teleatendimento.jsp"
+  SHAPE="448,17,0,0" SUBTYPE="jsp"
+  TITLE="portal_caer_teleatendimento.jsp" TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM NAME="page4"
+  PATH="/jsp/portal/caer/ouvidoria_portal_caer.jsp" SHAPE="448,129,0,0"
+  SUBTYPE="jsp" TITLE="ouvidoria_portal_caer.jsp" TYPE="page" model-entity="StrutsProcessItem"/>
+</PROCESS>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PROCESS model-entity="StrutsProcess">
+ <PROCESS-ITEM NAME="page0" PATH="/jsp/portal/caema/servicos.jsp"
+  SHAPE="32,18,0,0" SUBTYPE="jsp" TITLE="servicos.jsp" TYPE="page" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT NAME="link0"
+   PATH="/exibirServicosPortalCaemaAction.do" SUBTYPE="confirmed"
+   TARGET="action0" TITLE="/exibirServicosPortalCaemaAction.do"
+   TYPE="link" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="page1"
+  PATH="/jsp/portal/caema/index_portal_caema.jsp" SHAPE="496,18,0,0"
+  SUBTYPE="jsp" TITLE="index_portal_caema.jsp" TYPE="page" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT NAME="link0"
+   PATH="/exibirServicosPortalCaemaAction.do" SUBTYPE="confirmed"
+   TARGET="action0" TITLE="/exibirServicosPortalCaemaAction.do"
+   TYPE="link" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="page2"
+  PATH="/jsp/portal/caema/emitir_declaracao_anual_quitacao_debito_portal_caema.jsp"
+  SHAPE="496,194,0,0" SUBTYPE="jsp"
+  TITLE="emitir_declaracao_anual_quitacao_debito_portal_caema.jsp"
+  TYPE="page" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT NAME="link0"
+   PATH="/emitir2viaDeclaracaoAnualQuitacaoDebitosAction.do"
+   SUBTYPE="confirmed" TARGET="action1"
+   TITLE="/emitir2viaDeclaracaoAnualQuitacaoDebitosAction.do"
+   TYPE="link" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#emitir2viaDeclaracaoAnualQuitacaoDebitosAction"
+  NAME="action1" PATH="/emitir2viaDeclaracaoAnualQuitacaoDebitosAction"
+  SHAPE="704,209,0,0" SUBTYPE="unknown" TYPE="action" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM ID="#exibirServicosPortalCaemaAction" NAME="action0"
+  PATH="/exibirServicosPortalCaemaAction" SHAPE="240,18,0,0"
+  SUBTYPE="unknown" TYPE="action" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM ID="#exibirServicosPortalCaerAction" NAME="action2"
+  PATH="/exibirServicosPortalCaerAction" SHAPE="32,129,0,0"
+  TITLE="ExibirServicosPortalCaerActionForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="exibirServicosPortalCaerAction"
+   NAME="forward1" PATH="/jsp/portal/caer/index_portal_caer.jsp"
+   TARGET="page3" TITLE="exibirServicosPortalCaerAction" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="servicosPortalCaerAction" NAME="forward0"
+   PATH="/jsp/portal/caer/servicos.jsp" TARGET="page4"
+   TITLE="servicosPortalCaerAction" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+  <PROCESS-ITEM-OUTPUT ID="servicoDeclaracaoAnualCaer" NAME="forward2"
+   PATH="/jsp/portal/caer/emitir_declaracao_anual_quitacao_debito_portal_caer.jsp"
+   TARGET="page6" TITLE="servicoDeclaracaoAnualCaer" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="page3"
+  PATH="/jsp/portal/caer/index_portal_caer.jsp" SHAPE="240,241,0,0"
+  SUBTYPE="jsp" TITLE="index_portal_caer.jsp" TYPE="page" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT NAME="link0"
+   PATH="/exibirServicosPortalCaerAction.do" SUBTYPE="confirmed"
+   TARGET="action2" TITLE="/exibirServicosPortalCaerAction.do"
+   TYPE="link" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="page4" PATH="/jsp/portal/caer/servicos.jsp"
+  SHAPE="240,353,0,0" SUBTYPE="jsp" TITLE="servicos.jsp" TYPE="page" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT NAME="link0"
+   PATH="/exibirServicosPortalCaerAction.do" SUBTYPE="confirmed"
+   TARGET="action2" TITLE="/exibirServicosPortalCaerAction.do"
+   TYPE="link" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="page6"
+  PATH="/jsp/portal/caer/emitir_declaracao_anual_quitacao_debito_portal_caer.jsp"
+  SHAPE="240,465,0,0" SUBTYPE="jsp"
+  TITLE="emitir_declaracao_anual_quitacao_debito_portal_caer.jsp"
+  TYPE="page" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT NAME="link0"
+   PATH="/emitir2viaDeclaracaoAnualQuitacaoDebitosAction.do"
+   SUBTYPE="confirmed" TARGET="action1"
+   TITLE="/emitir2viaDeclaracaoAnualQuitacaoDebitosAction.do"
+   TYPE="link" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+</PROCESS>

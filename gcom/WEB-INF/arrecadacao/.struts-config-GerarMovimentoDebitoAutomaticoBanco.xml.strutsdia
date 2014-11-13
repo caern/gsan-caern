@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PROCESS model-entity="StrutsProcess">
+ <PROCESS-ITEM ID="#gerarMovimentoDebitoAutomaticoBancoAction"
+  NAME="action0" PATH="/gerarMovimentoDebitoAutomaticoBancoAction"
+  SHAPE="448,17,0,0"
+  TITLE="GerarMovimentoDebitoAutomaticoBancoActionForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="resumoMovimentos" NAME="forward0"
+   PATH="/jsp/arrecadacao/debito_automatico_movimento_resumo.jsp"
+   TARGET="page0" TITLE="resumoMovimentos" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#exibirGerarMovimentoDebitoAutomaticoBancoAction"
+  NAME="action1" PATH="/exibirGerarMovimentoDebitoAutomaticoBancoAction"
+  SHAPE="32,17,0,0"
+  TITLE="GerarMovimentoDebitoAutomaticoBancoActionForm" TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="gerarMovimentoDebitoAutomatico"
+   NAME="forward0"
+   PATH="/jsp/arrecadacao/gerar_debito_automatico_movimento.jsp"
+   TARGET="page1" TITLE="gerarMovimentoDebitoAutomatico" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#gerarRelatorioMovimentoDebitoAutomaticoBancoAction"
+  NAME="action2"
+  PATH="/gerarRelatorioMovimentoDebitoAutomaticoBancoAction"
+  SHAPE="32,129,0,0" TYPE="action" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM NAME="page0"
+  PATH="/jsp/arrecadacao/debito_automatico_movimento_resumo.jsp"
+  SHAPE="656,34,0,0" SUBTYPE="jsp"
+  TITLE="debito_automatico_movimento_resumo.jsp" TYPE="page" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT NAME="link0" PATH="/removerBairroAction.do"
+   SUBTYPE="confirmed" TARGET="action3" TITLE="/removerBairroAction.do"
+   TYPE="link" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="page1"
+  PATH="/jsp/arrecadacao/gerar_debito_automatico_movimento.jsp"
+  SHAPE="240,34,0,0" SUBTYPE="jsp"
+  TITLE="gerar_debito_automatico_movimento.jsp" TYPE="page" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT NAME="link0"
+   PATH="/gerarMovimentoDebitoAutomaticoBancoAction.do"
+   SUBTYPE="confirmed" TARGET="action0"
+   TITLE="/gerarMovimentoDebitoAutomaticoBancoAction.do" TYPE="link" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#removerBairroAction" NAME="action3"
+  PATH="/removerBairroAction" SHAPE="864,17,0,0" SUBTYPE="unknown"
+  TYPE="action" model-entity="StrutsProcessItem"/>
+</PROCESS>

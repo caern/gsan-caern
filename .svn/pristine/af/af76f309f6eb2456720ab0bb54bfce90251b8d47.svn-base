@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PROCESS model-entity="StrutsProcess">
+ <PROCESS-ITEM ID="#gerarRoteiroDispositivoMovelAction" NAME="action0"
+  PATH="/gerarRoteiroDispositivoMovelAction" SHAPE="32,129,0,0"
+  TITLE="GerarRoteiroDispositivoMovelActionForm" TYPE="action" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM ID="#exibirGerarRoteiroDispositivoMovelAction"
+  NAME="action1" PATH="/exibirGerarRoteiroDispositivoMovelAction"
+  SHAPE="32,17,0,0" TITLE="GerarRoteiroDispositivoMovelActionForm"
+  TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="gerarRoteiroDispositivoMovel" NAME="forward0"
+   PATH="/jsp/atualizacaocadastral/roteiro_dispositivo_movel_gerar.jsp"
+   TARGET="page0" TITLE="gerarRoteiroDispositivoMovel" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="page0"
+  PATH="/jsp/atualizacaocadastral/roteiro_dispositivo_movel_gerar.jsp"
+  SHAPE="240,34,0,0" SUBTYPE="jsp"
+  TITLE="roteiro_dispositivo_movel_gerar.jsp" TYPE="page" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT NAME="link0"
+   PATH="/exibirGerarRoteiroDispositivoMovelAction.do"
+   SUBTYPE="confirmed" TARGET="action1"
+   TITLE="/exibirGerarRoteiroDispositivoMovelAction.do" TYPE="link" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+</PROCESS>

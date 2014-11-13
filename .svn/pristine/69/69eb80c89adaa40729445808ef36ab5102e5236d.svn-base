@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PROCESS model-entity="StrutsProcess">
+ <PROCESS-ITEM NAME="page0"
+  PATH="/jsp/arrecadacao/movimento_arrecadadores_itens_pesquisar.jsp"
+  SHAPE="240,34,0,0" SUBTYPE="jsp"
+  TITLE="movimento_arrecadadores_itens_pesquisar.jsp" TYPE="page" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT NAME="link0"
+   PATH="/exibirConsultarItensMovimentoArrecadadorAction.do"
+   SUBTYPE="confirmed" TARGET="action1"
+   TITLE="/exibirConsultarItensMovimentoArrecadadorAction.do"
+   TYPE="link" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="page1"
+  PATH="/jsp/arrecadacao/movimento_arrecadadores_consultar_itens.jsp"
+  SHAPE="656,34,0,0" SUBTYPE="jsp"
+  TITLE="movimento_arrecadadores_consultar_itens.jsp" TYPE="page" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM NAME="page2"
+  PATH="/jsp/arrecadacao/movimento_arrecadadores_apresentar_dados_conteudo_registro.jsp"
+  SHAPE="240,146,0,0" SUBTYPE="jsp"
+  TITLE="movimento_arrecadadores_apresentar_dados_conteudo_registro.jsp"
+  TYPE="page" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT NAME="link0"
+   PATH="/exibirApresentarDadosConteudoRegistroMovimentoArrecadadorAction.do"
+   SUBTYPE="confirmed" TARGET="action2"
+   TITLE="/exibirApresentarDadosConteudoRegistroMovimentoArrecadadorAction.do"
+   TYPE="link" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="page3"
+  PATH="/jsp/arrecadacao/movimento_arrecadadores_apresentar_analise.jsp"
+  SHAPE="240,258,0,0" SUBTYPE="jsp"
+  TITLE="movimento_arrecadadores_apresentar_analise.jsp" TYPE="page" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT NAME="link0"
+   PATH="/exibirApresentarAnaliseMovimentoArrecadadoresAction.do"
+   SUBTYPE="confirmed" TARGET="action3"
+   TITLE="/exibirApresentarAnaliseMovimentoArrecadadoresAction.do"
+   TYPE="link" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#exibirGerarArquivoBancosCarteira17Action"
+  NAME="action0" PATH="/exibirGerarArquivoBancosCarteira17Action"
+  SHAPE="32,465,0,0" TITLE="GerarArquivoBancosCarteira17ActionForm"
+  TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="gerarArquivoBancosCarteira17" NAME="forward0"
+   PATH="/jsp/arrecadacao/gerar_arquivo_banco_carteira17.jsp"
+   TARGET="page4" TITLE="gerarArquivoBancosCarteira17" TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="page4"
+  PATH="/jsp/arrecadacao/gerar_arquivo_banco_carteira17.jsp"
+  SHAPE="240,482,0,0" SUBTYPE="jsp"
+  TITLE="gerar_arquivo_banco_carteira17.jsp" TYPE="page" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT NAME="link0"
+   PATH="/gerarArquivoBancosCarteira17Action.do" SUBTYPE="confirmed"
+   TARGET="action5" TITLE="/gerarArquivoBancosCarteira17Action.do"
+   TYPE="link" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#exibirConsultarItensMovimentoArrecadadorAction"
+  NAME="action1" PATH="/exibirConsultarItensMovimentoArrecadadorAction"
+  SHAPE="448,34,0,0" SUBTYPE="unknown" TYPE="action" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM ID="#gerarArquivoBancosCarteira17Action" NAME="action5"
+  PATH="/gerarArquivoBancosCarteira17Action" SHAPE="448,465,0,0"
+  TITLE="GerarArquivoBancosCarteira17ActionForm" TYPE="action" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM
+  ID="#exibirApresentarDadosConteudoRegistroMovimentoArrecadadorAction"
+  NAME="action2"
+  PATH="/exibirApresentarDadosConteudoRegistroMovimentoArrecadadorAction"
+  SHAPE="448,258,0,0" SUBTYPE="unknown" TYPE="action" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM ID="#exibirApresentarAnaliseMovimentoArrecadadoresAction"
+  NAME="action3"
+  PATH="/exibirApresentarAnaliseMovimentoArrecadadoresAction"
+  SHAPE="448,370,0,0" SUBTYPE="unknown" TYPE="action" model-entity="StrutsProcessItem"/>
+</PROCESS>

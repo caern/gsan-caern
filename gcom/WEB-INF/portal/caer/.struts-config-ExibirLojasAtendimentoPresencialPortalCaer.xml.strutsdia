@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PROCESS model-entity="StrutsProcess">
+ <PROCESS-ITEM NAME="page0"
+  PATH="/jsp/portal/caema/lojas_atendimento_presencial_portal_caema.jsp"
+  SHAPE="240,34,0,0" SUBTYPE="jsp"
+  TITLE="lojas_atendimento_presencial_portal_caema.jsp" TYPE="page" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT NAME="link0"
+   PATH="/exibirLojasAtendimentoPresencialPortalCaemaAction.do"
+   SUBTYPE="confirmed" TARGET="action0"
+   TITLE="/exibirLojasAtendimentoPresencialPortalCaemaAction.do"
+   TYPE="link" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#exibirLojasAtendimentoPresencialPortalCaemaAction"
+  NAME="action0"
+  PATH="/exibirLojasAtendimentoPresencialPortalCaemaAction"
+  SHAPE="448,34,0,0" SUBTYPE="unknown" TYPE="action" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM ID="#exibirLojasAtendimentoPresencialPortalCaerAction"
+  NAME="action1"
+  PATH="/exibirLojasAtendimentoPresencialPortalCaerAction"
+  SHAPE="32,17,0,0"
+  TITLE="ExibirLojasAtendimentoPresencialPortalCaerActionForm"
+  TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT
+   ID="exibirLojasAtendimentoPresencialPortalCaerAction" NAME="forward0"
+   PATH="/jsp/portal/caer/lojas_atendimento_presencial_portal_caer.jsp"
+   TARGET="page1"
+   TITLE="exibirLojasAtendimentoPresencialPortalCaerAction"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="page1"
+  PATH="/jsp/portal/caer/lojas_atendimento_presencial_portal_caer.jsp"
+  SHAPE="240,129,0,0" SUBTYPE="jsp"
+  TITLE="lojas_atendimento_presencial_portal_caer.jsp" TYPE="page" model-entity="StrutsProcessItem"/>
+</PROCESS>

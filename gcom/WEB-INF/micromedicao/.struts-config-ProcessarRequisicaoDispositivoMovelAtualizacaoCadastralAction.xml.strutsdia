@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PROCESS model-entity="StrutsProcess">
+ <PROCESS-ITEM
+  ID="#processarRequisicaoDispositivoMovelAtualizacaoCadastralAction"
+  NAME="action0"
+  PATH="/processarRequisicaoDispositivoMovelAtualizacaoCadastralAction"
+  SHAPE="32,17,0,0" TYPE="action" model-entity="StrutsProcessItem"/>
+</PROCESS>

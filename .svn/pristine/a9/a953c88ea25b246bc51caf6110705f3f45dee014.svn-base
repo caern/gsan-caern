@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PROCESS model-entity="StrutsProcess">
+ <PROCESS-ITEM ID="#exibirFiltrarRelatorioDividaAtivaAction"
+  NAME="action0" PATH="/exibirFiltrarRelatorioDividaAtivaAction"
+  SHAPE="32,17,0,0" TITLE="FiltrarRelatorioDividaAtivaActionForm"
+  TYPE="action" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT ID="exibirFiltrarRelatorioDividaAtiva"
+   NAME="forward0"
+   PATH="/jsp/cobranca/relatorio_divida_ativa_filtrar.jsp"
+   TARGET="page1" TITLE="exibirFiltrarRelatorioDividaAtiva"
+   TYPE="forward" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="page1"
+  PATH="/jsp/cobranca/relatorio_divida_ativa_filtrar.jsp"
+  SHAPE="240,129,0,0" SUBTYPE="jsp"
+  TITLE="relatorio_divida_ativa_filtrar.jsp" TYPE="page" model-entity="StrutsProcessItem">
+  <PROCESS-ITEM-OUTPUT NAME="link0"
+   PATH="/exibirFiltrarRelatorioDividaAtivaAction.do"
+   SUBTYPE="confirmed" TARGET="action0"
+   TITLE="/exibirFiltrarRelatorioDividaAtivaAction.do" TYPE="link" model-entity="StrutsProcessItemOutput"/>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM ID="#gerarRelatorioDividaAtivaAmortizadaAction"
+  NAME="action1" PATH="/gerarRelatorioDividaAtivaAmortizadaAction"
+  SHAPE="32,241,0,0" TITLE="FiltrarRelatorioDividaAtivaActionForm"
+  TYPE="action" model-entity="StrutsProcessItem"/>
+ <PROCESS-ITEM ID="#gerarRelatorioDividaAtivaParceladaAction"
+  NAME="action2" PATH="/gerarRelatorioDividaAtivaParceladaAction"
+  SHAPE="240,257,0,0" TITLE="FiltrarRelatorioDividaAtivaActionForm"
+  TYPE="action" model-entity="StrutsProcessItem"/>
+</PROCESS>
